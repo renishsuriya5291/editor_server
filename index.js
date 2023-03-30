@@ -3,7 +3,7 @@ const app = express();
 const http = require('http');
 const path = require('path');
 const { Server } = require('socket.io');
-const ACTIONS = require('./client/src/constant/Actions');
+const ACTIONS = require('./Action');
 
 const httpServer = http.createServer(app);
 const socketIo = new Server(httpServer);
